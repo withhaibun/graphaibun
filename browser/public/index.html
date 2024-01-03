@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div>
+      <label id="refreshPage">↻</label>
+      <input type="checkbox" id="freeOrbit" /> <label for="freeOrbit">Limit Orbit</label>  |
+      <label id="fit">Fit</label> |
+      <label id="resetView">Reset view</label> |
+      <label id="toggleSpheres">spheres</label> |
+      <label id="togglePlanes">planes</label> |
+      <label id="toggleGrids">grids</label> |
+
+      DAG <select id="dagMode">
+        <option value="">none</option>
+        <option value="td">td</option>
+        <option value="bu">bu</option>
+        <option value="lr">lr</option>
+        <option value="rl">rl</option>
+        <option value="zout">zout</option>
+        <option value="zin">zin</option>
+        <option value="radialIn">radialIn</option>
+        <option value="radialOut">radialOut</option>
+        </select>
+        <span id="info">info</span>
+    </div>
+    <div id="3d-graph"></div>
+    <style>
+      .node-label {
+        font-size: 12px;
+        padding: 1px 4px;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.5);
+        user-select: none;
+      }
+    </style>
+  </body>
+</html>
