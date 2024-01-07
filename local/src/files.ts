@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { graphMe } from './server.js';
 
-const dirPath = '/home/vid/D/dev/withhaibun/graphaibun';
+const dirPath = '..';
 
 function getFileType(filePath: string): string {
     if (fs.statSync(filePath).isDirectory()) return 'directory';
